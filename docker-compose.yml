@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    nginx:
+        image: nginx
+        volumes:
+            - '~/rest-api-example/nginx.conf:/etc/nginx/conf.d/default.conf:ro'
+            - '~/rest-api-example:/var/www'
+        ports:
+            - "80:80"
+        links: 
+            - php
+    php:
+        build: .
+        volumes: 
+            - '~/rest-api-example:/var/www'
