@@ -19,7 +19,7 @@ class Registration
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
+    public ?int $id;
 
     /**
      * @var string $name A name property - this description will be available in the API documentation too.
@@ -27,19 +27,11 @@ class Registration
      * @ORM\Column
      * @Assert\NotBlank
      */
-    public $name;
+    public string $name;
 
     /**
-     * @var string $name
-     *
      * @ORM\Column
      * @Assert\NotBlank
      */
-    public $emailAddress;
-    
-    
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+    public string $emailAddress;
 }
