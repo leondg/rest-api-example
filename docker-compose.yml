@@ -1,7 +1,19 @@
 version: '3.7'
 
 services:
-    nginx:
+    db:
+        image: mariadb
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: Welkom01!
+    fpm:
+        build: .
+        volumes: 
+            - '~/rest-api-example:/var/www'
+        links:
+            - db
+    web:
         image: nginx
         volumes:
             - '~/rest-api-example/nginx.conf:/etc/nginx/conf.d/default.conf:ro'
@@ -9,8 +21,4 @@ services:
         ports:
             - "80:80"
         links: 
-            - php
-    php:
-        build: .
-        volumes: 
-            - '~/rest-api-example:/var/www'
+            - fpm
