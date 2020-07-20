@@ -22,7 +22,7 @@ class Registration
     public ?int $id;
 
     /**
-     * @var string $name A name property - this description will be available in the API documentation too.
+     * @var string $name De naam van de registratie
      *
      * @ORM\Column
      * @Assert\NotBlank
@@ -30,8 +30,11 @@ class Registration
     public string $name;
 
     /**
+     * @var string $emailAddress Het e-mailadres van de registratie
+     *
      * @ORM\Column
      * @Assert\NotBlank
+     * @Assert\Email
      */
     public string $emailAddress;
 }
