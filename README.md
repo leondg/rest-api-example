@@ -8,16 +8,16 @@ This is a REST API Example based on Symfony 5 and API Platform.
 - Docker-compose
 
 ## Setup
-- Clone the project with git
+- Clone the project with git 
 `git clone https://github.com/leondg/rest-api-example.git <project-dir>`
 
-- Run composer in the project directory to install all the dependencies.
+- Run composer in the project directory to install all the dependencies. 
 `composer install`
 
-- Run docker compose to start all the required containers.
+- Run docker compose to start all the required containers. 
 `docker-compose up -d`
 
-- Now the REST API Example should be running on:
+- Now the REST API Example should be running on: 
 `http://localhost:80`
 
 ## API Documentation
