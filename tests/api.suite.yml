@@ -1,0 +1,11 @@
+actor: ApiTester
+modules:
+    enabled:
+        - Symfony:
+            app_path: 'src'
+        - Doctrine2:
+            cleanup: true
+            depends: Symfony
+        - REST:
+            url: /
+            depends: Symfony
