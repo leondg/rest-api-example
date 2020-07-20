@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f45bb2a4e045173e84479668157859fb",
+    "content-hash": "bf122525a5246ae460c252661b03e194",
     "packages": [
         {
             "name": "api-platform/core",
@@ -6101,6 +6101,57 @@
                 "codeception"
             ],
             "time": "2020-04-20T07:26:11+00:00"
+        },
+        {
+            "name": "codeception/module-doctrine2",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/module-doctrine2.git",
+                "reference": "bbeb69dadc7ca5e724907e81d35bb392f27b4480"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/module-doctrine2/zipball/bbeb69dadc7ca5e724907e81d35bb392f27b4480",
+                "reference": "bbeb69dadc7ca5e724907e81d35bb392f27b4480",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "4.0.x-dev | ^4.0",
+                "php": ">=5.6.0 <8.0"
+            },
+            "require-dev": {
+                "codeception/util-robohelpers": "dev-master",
+                "doctrine/annotations": "^1",
+                "doctrine/data-fixtures": "^1",
+                "doctrine/orm": "^2",
+                "ramsey/uuid-doctrine": "^1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk"
+                },
+                {
+                    "name": "Alex Kunin"
+                }
+            ],
+            "description": "Doctrine2 module for Codeception",
+            "homepage": "http://codeception.com/",
+            "keywords": [
+                "codeception",
+                "doctrine2"
+            ],
+            "time": "2019-11-13T17:19:26+00:00"
         },
         {
             "name": "codeception/module-phpbrowser",

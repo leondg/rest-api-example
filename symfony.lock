@@ -55,6 +55,9 @@
     "codeception/module-asserts": {
         "version": "1.2.1"
     },
+    "codeception/module-doctrine2": {
+        "version": "1.0.1"
+    },
     "codeception/module-phpbrowser": {
         "version": "1.0.1"
     },
