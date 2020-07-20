@@ -1,11 +1,13 @@
 # REST API Example
 This is a REST API Example based on Symfony 5 and API Platform.
 
+
 ## Requirements
 - PHP 7.4 CLI
 - Composer
 - Docker
 - Docker-compose
+
 
 ## Setup
 - Clone the project with git  
@@ -47,11 +49,13 @@ Time: 00:00.257, Memory: 28.00 MB
 OK (6 tests, 22 assertions)
 ```
 
+_*No unit tests are available since everything is handled by API Platform_
+
+
 ## API Documentation
 The API documentation can be found in the above mentioned url or click here:  
 http://localhost/docs?ui=re_doc
 
-_*No unit tests are available since everything is handled by API Platform_
 
 ## Improvements
 - Handle composer installation inside its own container instead of locally so no seperate composer installation is necessary. This can cause problems when using different PHP versions locally versus the one used by the container.
